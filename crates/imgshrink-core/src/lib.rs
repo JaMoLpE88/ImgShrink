@@ -1,0 +1,31 @@
+pub mod config;
+pub mod discovery;
+pub mod engine;
+pub mod error;
+pub mod format;
+pub mod jobs;
+pub mod journal;
+pub mod options;
+pub mod output;
+pub mod pathutil;
+pub mod plan;
+pub mod probe;
+pub mod report;
+pub mod stats;
+
+pub use discovery::{discover, InputKind, InputSelection, SourceItem};
+pub use error::CoreError;
+pub use format::ImageFormat;
+pub use jobs::{ItemResult, JobEvent, JobOptions, Stage};
+pub use options::{MetadataPolicy, OptimizeOptions, OutputFormat, Purpose};
+pub use output::Destination;
+pub use plan::{build_plan, ConflictPolicy, OperationPlan, PlanItem, SkipReason};
+pub use stats::Summary;
+
+pub const APP_NAME: &str = "ImgShrink";
+pub const APP_VERSION: &str = env!("CARGO_PKG_VERSION");
+pub const APP_AUTHOR: &str = "JaMoLpE88";
+pub const APP_WEBSITE: &str = "jmolo.es";
+pub const APP_WEBSITE_URL: &str = "https://jmolo.es";
+pub const REPO_URL: &str = "https://github.com/JaMoLpE88/ImgShrink";
+pub const APP_LICENSE: &str = "MIT";

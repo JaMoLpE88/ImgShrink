@@ -1,0 +1,26 @@
+[package]
+name = "imgshrink-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Optimizador de imágenes portable con TUI, por JaMoLpE88 (jmolo.es)"
+
+[[bin]]
+name = "imgshrink"
+path = "src/main.rs"
+
+[dependencies]
+imgshrink-core = { path = "../imgshrink-core" }
+imgshrink-tui = { path = "../imgshrink-tui" }
+clap.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tracing-appender.workspace = true
+image.workspace = true
+webp.workspace = true
+
+[dev-dependencies]
+portable-pty = "0.9"

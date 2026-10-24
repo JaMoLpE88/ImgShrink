@@ -1,0 +1,14 @@
+/target
+**/*.rs.bk
+*.pdb
+.DS_Store
+Thumbs.db
+/imgshrink-output
+/.imgshrink
+/dist
+*.zip
+**/ImgShrink/
+**/.imgshrink/
+docs/images/*.html
+/Python/
+/.local/

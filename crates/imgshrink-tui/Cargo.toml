@@ -1,0 +1,21 @@
+[package]
+name = "imgshrink-tui"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Interfaz de terminal interactiva de ImgShrink"
+
+[dependencies]
+imgshrink-core = { path = "../imgshrink-core" }
+ratatui.workspace = true
+crossterm.workspace = true
+unicode-width.workspace = true
+crossbeam-channel.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+ratatui.workspace = true
+image.workspace = true
+tempfile.workspace = true
