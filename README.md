@@ -85,7 +85,7 @@ Las imágenes se han generado desde la **TUI real** (render de ratatui) con dato
 ### Lo que no hace
 
 - No procesa vídeo, GIF animado ni APNG.
-- No incluye AVIF en 0.1.0.
+- No incluye AVIF en 0.1.1.
 - No edita fotografías ni aplica filtros creativos.
 - No garantiza que todas las imágenes reduzcan tamaño. Si el resultado no es menor, la política por defecto conserva el original y lo marca como omitido.
 - No promete atomicidad universal en unidades de red o con bloqueos de antivirus.
@@ -225,11 +225,11 @@ Notas:
 | JPEG 8 bits | JPEG | Se aplana la transparencia si la hubiera; CMYK puede fallar y se reporta |
 | PNG 8/16 bits | PNG | 16 bits se convierte a 8; APNG se omite |
 | WebP estático | WebP | Animados se omiten |
-| AVIF | — | No incluido en 0.1.0 |
+| AVIF | — | No incluido en 0.1.1 |
 
 - La orientación EXIF de JPEG se aplica a los píxeles y se normaliza para evitar dobles rotaciones.
 - El perfil ICC se conserva en JPEG (APP2) y PNG (iCCP) cuando la política es «Conservar color (ICC)».
-- En WebP, la versión 0.1.0 **no incrusta ICC**; la interfaz avisa cuando la imagen de origen lo tiene.
+- En WebP, la versión 0.1.1 **no incrusta ICC**; la interfaz avisa cuando la imagen de origen lo tiene.
 - Los metadatos EXIF, GPS y XMP se eliminan en todos los perfiles de esta versión.
 - Las imágenes con 16 bits por canal se convierten a 8 bits y se avisa.
 
@@ -269,7 +269,7 @@ En POSIX, el reemplazo en el mismo sistema de archivos es atómico. En Windows s
 - No se fuerza el tamaño de la ventana de la terminal. Si es pequeña se muestra un modo compacto o un aviso.
 - No se comprueba el espacio libre antes de empezar; un fallo de escritura se reporta sin tocar el original.
 - No hay recuperación automática del journal: se avisa de operaciones inacabadas para revisarlas a mano.
-- Los metadatos EXIF/GPS/XMP se eliminan siempre en 0.1.0; solo el ICC es conservable.
+- Los metadatos EXIF/GPS/XMP se eliminan siempre en 0.1.1; solo el ICC es conservable.
 - Las colisiones de nombres se detectan con normalización Unicode NFC y, en Windows/macOS, sin distinguir mayúsculas.
 - Las rutas de red y algunos sistemas de archivos no garantizan atomicidad.
 - No hay AVIF ni animaciones.

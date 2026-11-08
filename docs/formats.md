@@ -1,13 +1,13 @@
 # Formatos, perfiles y metadatos
 
-## Matriz de la versión 0.1.0
+## Matriz de la versión 0.1.1
 
 | Entrada | Salida | Sin pérdida | Notas |
 |---|---|---|---|
 | JPEG 8 bits | JPEG | No | Calidad configurable; alfa se aplana |
 | PNG 8/16 bits | PNG | Sí | 16 bits se reduce a 8; oxipng |
 | WebP estático | WebP | Sí/No | libwebp; animados se omiten |
-| AVIF | — | — | Fuera de 0.1.0 |
+| AVIF | — | — | Fuera de 0.1.1 |
 
 La detección usa magic bytes, no la extensión. Un archivo con extensión engañosa se procesa según su contenido real y se avisa.
 
@@ -26,13 +26,13 @@ El perfil Compartir no convierte a WebP por defecto porque la conversión puede 
 
 - La orientación EXIF de JPEG se aplica antes de codificar; la salida no lleva una orientación que pueda duplicar la rotación.
 - ICC se conserva en JPEG (APP2) y PNG (iCCP) cuando la política es `ColorOnly`.
-- WebP no incrusta ICC en 0.1.0; se avisa en el análisis.
+- WebP no incrusta ICC en 0.1.1; se avisa en el análisis.
 - No se realiza conversión de espacio de color a sRGB en esta versión. Si el perfil no se puede conservar, se avisa y se acepta el riesgo de cambio de color.
 - CMYK: el decodificador puede rechazarlo; se reporta como error, no se inventa una conversión.
 
 ## Metadatos
 
-En 0.1.0 todos los perfiles eliminan EXIF, GPS y XMP. `ColorOnly` conserva ICC; `StripAll` también lo elimina. No hay una opción de «conservar todo» todavía; se documentará cuando exista.
+En 0.1.1 todos los perfiles eliminan EXIF, GPS y XMP. `ColorOnly` conserva ICC; `StripAll` también lo elimina. No hay una opción de «conservar todo» todavía; se documentará cuando exista.
 
 ## Tamaño y calidad
 

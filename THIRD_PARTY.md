@@ -1,6 +1,6 @@
 # Avisos de terceros
 
-ImgShrink 0.1.0 se distribuye bajo licencia MIT. El binario incluye las siguientes dependencias de Rust y C, cada una con su propia licencia. Esta lista se ha generado a partir de `cargo metadata` el 2026-10-24; no sustituye a los textos completos de cada licencia, que están disponibles en los paquetes originales y en sus repositorios.
+ImgShrink 0.1.1 se distribuye bajo licencia MIT. El binario incluye las siguientes dependencias de Rust y C, cada una con su propia licencia. Esta lista se ha generado a partir de `cargo metadata` el 2026-10-24; no sustituye a los textos completos de cada licencia, que están disponibles en los paquetes originales y en sus repositorios.
 
 ## Resumen de licencias
 
