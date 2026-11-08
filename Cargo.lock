@@ -466,7 +466,7 @@ dependencies = [
 
 [[package]]
 name = "imgshrink-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "clap",
@@ -482,7 +482,7 @@ dependencies = [
 
 [[package]]
 name = "imgshrink-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crc32fast",
  "crossbeam-channel",
@@ -504,7 +504,7 @@ dependencies = [
 
 [[package]]
 name = "imgshrink-tui"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crossbeam-channel",
  "crossterm",

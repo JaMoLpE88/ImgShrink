@@ -2,6 +2,10 @@
 
 Autor: JaMoLpE88 — https://jmolo.es
 
+## 0.1.1 — 2026-11-08
+
+- Higiene del repositorio: reglas de ignorado para artefactos locales de agente/planificación. Sin cambios funcionales.
+
 ## 0.1.0 — 2026-10-24
 
 Primera versión funcional.
